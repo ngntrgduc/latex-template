@@ -1,0 +1,48 @@
+% Source: https://github.com/balldk/hw-analysis2-chap1
+
+% ========== Packages ==========
+\documentclass{article}
+\usepackage[a4paper,margin=0.5in,footskip=0.25in]{geometry}
+\usepackage[utf8]{vietnam}
+\usepackage{indentfirst}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{lipsum}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+\usepackage{color}
+\usepackage{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=magenta,
+    linkcolor=black,
+    urlcolor=cyan
+}
+
+% ========== Commands ==========
+\renewcommand{\leq}{\leqslant}
+\renewcommand{\geq}{\geqslant}
+\newcommand{\N}{\mathbb N}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\R}{\mathbb R}
+\newcommand{\C}{\mathbb C}
+\newcommand{\highlight}[1]{\colorbox{yellow!65!white}{#1}} % Highlight command
+
+% ========== Enviroments ==========
+% Question enviroment
+\newenvironment{question}[1]{
+	\begin{tcolorbox}[colback=cyan!5!white,colframe=cyan!95!black]
+	\textbf{Bài #1:}}{
+	\end{tcolorbox}
+}
+
+% Proof enviroment
+\newenvironment{proof}{
+    \begin{center}
+        \large\underline{Giải}
+    \end{center}
+}{}

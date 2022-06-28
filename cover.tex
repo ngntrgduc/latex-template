@@ -1,0 +1,36 @@
+\newgeometry{margin=0.5in, top=1in}
+\thispagestyle{empty} % Hide page's number on cover page
+
+% Page border
+\begin{tikzpicture}[remember picture, overlay]
+  \draw[line width = 1pt] ($(current page.north west) + (1cm,-1cm)$) rectangle ($(current page.south east) + (-1cm,1cm)$);
+\end{tikzpicture}
+
+% Contents
+\begin{center}
+
+\large{ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH}\\
+\large{TRƯỜNG ĐẠI HỌC KHOA HỌC TỰ NHIÊN}
+
+\vspace{3in}
+
+\hrule
+\vspace{0.5cm}
+
+{\huge\textbf{MÔN HỌC}}\\
+
+\vspace{0.5cm}
+
+\Large TÊN SINH VIÊN - MSSV
+
+\vspace{0.5cm}
+\hrule
+
+\vfill
+
+\large TP. Hồ Chí Minh - \today
+\vspace{0.5in}
+
+\end{center}
+\pagebreak
+\restoregeometry
