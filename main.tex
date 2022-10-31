@@ -1,33 +1,39 @@
 \input{structure}
 
 \begin{document}
+\onehalfspacing % More space each line
 
 % Cover page
 \input{cover}
 
-% Table of contents
-% \tableofcontents
-% \pagebreak
+% Or just the title
+% \title{Title}
+% \author{Author}
+% \date{}
+% \maketitle
+
 
 % ========== Start ========== 
+
 \begin{question}{1}
 \[1 + 1 = ?\]
 \end{question}
 
-\begin{proof}
-Dễ dàng ta thấy : \highlight{$1 + 1 = 2$}
-\end{proof}
+\begin{solution}
+Dễ dàng ta thấy : \highlight{$1 + 1 = 2$} \qed
+\end{solution}
 
 \begin{question}{2}
 Tìm $x$ của phương trình : \[x + 1 = 2\]
 \end{question}
 
-\begin{proof}
+\begin{solution}
 \begin{alignat*}{2}
-    && x + 1 &= 2 \\
-    &\Leftrightarrow& x &= 2 - 1 \\
-    &\Leftrightarrow& x &= 1
+    x + 1 &= 2 \\
+    \Leftrightarrow x &= 2 - 1 \\
+    \Leftrightarrow x &= 1
 \end{alignat*}
-\end{proof}
+Vậy nghiệm của phương trình là $x = 1$\qed
+\end{solution}
 
 \end{document}
