@@ -1,39 +1,40 @@
-\input{structure}
+\documentclass{article}
+\usepackage{ngntrgduc}
+\usepackage[a4paper,margin=0.5in,footskip=0.25in]{geometry}
+
+% Preamble 
+\title{Title}
+\author{Author}
+\date{}
 
 \begin{document}
+
+\input{cover} % Cover page
+% \maketitle % Make title
 \onehalfspacing % More space each line
 
-% Cover page
-\input{cover}
-
-% Or just the title
-% \title{Title}
-% \author{Author}
-% \date{}
-% \maketitle
-
-
-% ========== Start ========== 
-
+% Start
 \begin{question}{1}
-\[1 + 1 = ?\]
+    \[1 + 1 = ?\]
 \end{question}
 
 \begin{solution}
-Dễ dàng ta thấy : \highlight{$1 + 1 = 2$} \qed
+    Dễ dàng ta thấy : \highlight{$1 + 1 = 2$} \qed
 \end{solution}
+
 
 \begin{question}{2}
-Tìm $x$ của phương trình : \[x + 1 = 2\]
+    Tìm $x$ của phương trình : \[x + 1 = 2\]
 \end{question}
 
 \begin{solution}
-\begin{alignat*}{2}
-    x + 1 &= 2 \\
-    \Leftrightarrow x &= 2 - 1 \\
-    \Leftrightarrow x &= 1
-\end{alignat*}
-Vậy nghiệm của phương trình là $x = 1$\qed
+    \begin{alignat*}{2}
+        x + 1 &= 2 \\
+        \Leftrightarrow x &= 2 - 1 \\
+        \Leftrightarrow x &= 1
+    \end{alignat*}
+    Vậy nghiệm của phương trình là $x = 1$\qed  
 \end{solution}
+
 
 \end{document}
